@@ -31,5 +31,7 @@ setup(name='collective.js.oembed',
       ],
       entry_points="""
       # -*- Entry points: -*-
+      [z3c.autoinclude.plugin]
+      target = plone
       """,
       )

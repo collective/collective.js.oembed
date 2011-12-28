@@ -77,7 +77,7 @@ How to manage providers
 'greedy' option let you activate a fallback service to not natively supported
 services, by default the service used is oohembed_.
 
-allowerproviders::
+allowed providers::
 
     $(".oembed").oembed(null, { allowedProviders: ["flickr", "youtube"] });
 
