@@ -71,6 +71,77 @@ callback methods are directly implemented.
 
 Any other oEmbed provider uses embedly_ service.
 
+How to manage providers
+-----------------------
+
+'greedy' option let you activate a fallback service to not natively supported
+services, by default the service used is oohembed_.
+
+allowerproviders::
+
+    $(".oembed").oembed(null, { allowedProviders: ["flickr", "youtube"] });
+
+custom providers::
+
+        $(".oembed").oembed(null, {
+            greedy: false,
+            customProviders: [{
+                "name": "streetfire.net",
+                "urlschemes": ["streetfire\\.net\/video\/.*"],
+                "apiendpoint": "http://api.embed.ly/v1/api/oembed?"
+            }]
+        });
+
+disallowed providers::
+
+    $(".oembed").oembed(null, { disallowedProviders: ["flickr", "youtube"] });
+
+default oembed provider::
+
+    $(".oembed").oembed(null, {defaultOEmbedProvider: "embed.ly"});
+
+embeded method
+--------------
+
+append::
+
+    $(".oembed").oembed(null, {embedMethod: "append"});
+
+It append to the .oembed container the result with a container classified::
+
+    <a href="..." class="oembed">...</a>
+    <div class="oembed-container oembed-container-Vimeo">...</div>
+
+fill::
+
+    $(".oembed").oembed(null, {embedMethod: "fill"});
+
+It fill the link with the results::
+
+    <a href="..." class="oembed">
+      <div>...</div>
+    </a>
+
+replace::
+
+    $(".oembed").oembed(null, {embedMethod: "replace"});
+
+
+It replaces the link with the html snippet
+
+manage size
+-----------
+
+You can add a size constraint to the html snippet. You can set maxWidth and/or
+maxHeight::
+
+    $(".oembed").oembed(null, { 
+            maxWidth: 400, 
+            maxHeight: 300 });
+    });
+
+
+
 Credits
 =======
 
@@ -95,3 +166,4 @@ Contributors
 .. _makinacom:  http://www.makina-corpus.com
 .. _oembed: https://code.google.com/p/jquery-oembed
 .. _embedly: http://embed.ly
+.. _oohembed: www.oohembed.com
