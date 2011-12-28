@@ -1,0 +1,20 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="collective.js.oembed">
+
+  <browser:resourceDirectory
+    name="collective.js.oembed"
+    directory="resources"
+    />
+
+  <genericsetup:registerProfile
+      name="default"
+      title="collective.js.oembed"
+      directory="profiles/default"
+      description='Extension profile for collective.js.oembed.'
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+</configure>

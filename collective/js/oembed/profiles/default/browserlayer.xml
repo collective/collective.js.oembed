@@ -1,0 +1,6 @@
+<layers>
+<!-- uncomment to activate
+    <layer name="collective.js.oembed"
+           interface="collective.js.oembed.interfaces.ILayer" />
+-->
+</layers>
