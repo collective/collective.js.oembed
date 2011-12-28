@@ -1,0 +1,58 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="here/main_template/macros/master"
+      i18n:domain="collective.googledocsviewer">
+<body>
+<div metal:fill-slot="content-core">
+    <script type="text/javascript">
+            $(document).ready(function() {
+                    $("a.oembed").oembed(null,{defaultOEmbedProvider:"embed.ly", maxWidth:300});
+            });
+    </script>
+    <h1>Example & tests of jquery.oembed integration in Plone</h1>
+
+    <h2>5min.com</h2>
+    <p><a href="http://www.5min.com/Video/Worst-Dressed-Stars-of-2010-516901179" class="oembed">5min</a></p>
+
+    <h2>blip.tv</h2>
+    <p><a href="http://www.blip.tv/file/4446503" class="oembed">blip.tv</a></p>
+    
+    <h2>dailymotion.com</h2>
+    <p><a href="http://www.dailymotion.com/video/xhwuz5_playoffs-game-4-top-5_sport" class="oembed">dailymotion</a></p>
+
+    <h2>hulu.com</h2>
+    <p><a href="http://www.hulu.com/watch/228667/late-night-with-jimmy-fallon-wed-mar-30-2011" class="oembed"></a></p>
+
+    <h2>vids.myspace.com</h2>
+    <p><a href="http://vids.myspace.com/index.cfm?fuseaction=vids.individual&videoid=102691357" class="oembed">Gorillaz - Plastic Beach Orchestral Trailer</a></p>
+
+    <h2>photobucket.com</h2>
+    <p><a href="http://img.photobucket.com/albums/v211/JAV123/Michael%20Holland%20Candle%20Burning/_MG_5661.jpg" class="oembed">Michael Holland Candle Burning</a></p>
+
+    <h2>screenr.com</h2>
+    <p><a href="http://screenr.com/oXs" class="oembed">Screenr screencast on an iPhone</a></p>
+
+    <h2>scribd.com</h2>
+    <p><a href="http://www.scribd.com/doc/17896323/Indian-Automobile-industryPEST" class="oembed"></a></p>
+
+    <h2>slideshare.net</h2>
+    <p><a href="http://www.slideshare.net/cschalk/app-engine-overview-google-hackathon-sxsw-2010" class="oembed">Slideshare - App Engine Overview @ Google Hackathon SXSW 2010</a></p>
+
+    <h2>viddler.com</h2>
+    <p><a href="http://www.viddler.com/explore/failblog/videos/1947/" class="oembed"></a></p>
+
+    <h2>youtube.com</h2>
+    <p><a href="http://www.youtube.com/watch?v=CeacjOkLjZ0" class="oembed"></a></p>
+
+    <h2>flickr.com</h2>
+    <p>With just a photo<a href="http://www.flickr.com/photos/14516334@N00/345009210/" class="oembed">Flickr Image</a></p>
+
+    <h3>vimeo.com</h3>
+    <p><a href="http://vimeo.com/3108686" class="oembed">Vimeo Video</a></p>
+
+</div>
+</body>
+</html>
