@@ -30,6 +30,8 @@ Implicit example::
 Configuring multiple providers example
 --------------------------------------
 
+::
+
     <script type="text/javascript">
             $(document).ready(function() {
                     $(".oembed").oembed(null, 
